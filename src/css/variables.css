@@ -1,0 +1,18 @@
+:root {
+  --color-black: #121417;
+  --color-white: #ffffff;
+  --color-green: #4dc274;
+  --color-green-hover: #38ae5f;
+  --color-lightgreen: #d4fde1;
+  --color-lightestgreen: #bee8cc;
+  --color-gray: #f3f5f6;
+
+  --green-gradient: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+
+  --font-family: 'Manrope', sans-serif;
+
+  --mobile-min-width: 320px;
+  --mobile-max-width: 375px;
+  --tablet-width: 768px;
+  --desktop-width: 1280px;
+}
