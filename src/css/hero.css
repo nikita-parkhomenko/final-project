@@ -1,0 +1,108 @@
+.hero {
+  padding-bottom: 80px;
+}
+
+.hero > .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 709px;
+  max-width: 335px;
+  padding: 20px 14px 14px 20px;
+  border-radius: 30px;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.hero-title {
+  max-width: 295px;
+  margin-bottom: 40px;
+  color: var(--color-white);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.hero-btn {
+  margin-bottom: 20px;
+}
+
+.scroll-btn {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-green);
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.scroll-btn:hover,
+.scroll-btn:focus {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.scroll-icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+
+  .hero > .container {
+    height: 857px;
+    max-width: 704px;
+    padding: 0 32px 32px 32px;
+    justify-content: flex-end;
+  }
+
+  .hero-title {
+    max-width: 488px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .hero-btn {
+    margin-bottom: 0;
+  }
+
+  .scroll-btn {
+    right: 32px;
+    bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-bottom: 96px;
+  }
+
+  .hero > .container {
+    height: 629px;
+    max-width: 1152px;
+    padding: 0 64px 96px 64px;
+  }
+
+  .hero-title {
+    max-width: 564px;
+  }
+}
