@@ -66,15 +66,30 @@
   }
 
   .nav-link {
+    position: relative;
+    display: block;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28;
-    transition: color 200ms ease-in-out;
   }
 
-  .nav-link:hover,
-  .nav-link:focus {
-    color: var(--color-green);
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 37px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--color-green);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease-in-out;
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    transform: scaleX(1);
   }
 
   .social-list {
@@ -101,6 +116,8 @@
   }
 
   .social-icon {
+    width: 28px;
+    height: 28px;
     fill: currentColor;
   }
 
