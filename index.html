@@ -12,7 +12,7 @@
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <script type="module" crossorigin src="/final-project/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/final-project/assets/index-C3iSgysS.css">
+  <link rel="stylesheet" crossorigin href="/final-project/assets/index-BR1ONF3F.css">
 </head>
   <body>
     <header class="header" id="header">
@@ -285,6 +285,70 @@
         <p class="teachers-bio">Our expert in English for specific purposes, Volodymyr tailors his approach to meet individual career and industry-specific language needs</p>
       </li>
     </ul>
+  </div>
+</section>
+
+      <section class="section application" id="application">
+  <div class="container">
+    <div class="section-header">
+      <h2>Leave an <span class="underline">application</span></h2>
+      <p class="section-description">
+        Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
+      </p>
+    </div>
+
+    <div class="application-content">
+      <div class="application-stat">
+        <p class="application-stat-number">1000</p>
+        <p class="application-stat-text">
+          of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.
+        </p>
+      </div>
+
+      <form class="application-form" id="applicationForm">
+        <div class="application-fields">
+          <input class="application-input" type="text" name="user-name" placeholder="Name" required />
+          <input class="application-input" type="email" name="user-email" placeholder="Email" required />
+          <input
+            class="application-input"
+            type="tel"
+            name="user-phone"
+            placeholder="Phone"
+            pattern="\+?[0-9\s\-\(\)]{7,20}"
+            required
+          />
+          <textarea class="application-input application-textarea" name="user-comment" placeholder="Comment" rows="4"></textarea>
+        </div>
+
+        <fieldset class="application-radio-group">
+          <legend class="application-radio-title">Choose a teacher</legend>
+
+          <div class="application-radio">
+            <input class="application-radio-input" type="radio" name="teacher" value="maria" id="teacher-maria" checked />
+            <label class="application-radio-label" for="teacher-maria">Maria</label>
+          </div>
+          <div class="application-radio">
+            <input class="application-radio-input" type="radio" name="teacher" value="artem" id="teacher-artem" />
+            <label class="application-radio-label" for="teacher-artem">Artem</label>
+          </div>
+          <div class="application-radio">
+            <input class="application-radio-input" type="radio" name="teacher" value="ilona" id="teacher-ilona" />
+            <label class="application-radio-label" for="teacher-ilona">Ilona</label>
+          </div>
+          <div class="application-radio">
+            <input class="application-radio-input" type="radio" name="teacher" value="volodymyr" id="teacher-volodymyr" />
+            <label class="application-radio-label" for="teacher-volodymyr">Volodymyr</label>
+          </div>
+        </fieldset>
+
+        <button class="btn btn-primary application-submit" type="submit">Send</button>
+
+        <p class="application-policy">
+          By clicking on "Send" button, you agree to our
+          <a class="application-policy-link" href="#">Privacy Policy</a>, and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
   </div>
 </section>
 
