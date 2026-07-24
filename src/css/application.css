@@ -1,0 +1,261 @@
+.application-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.application-stat {
+  display: none;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 335px;
+}
+
+.application-fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 18px;
+}
+
+.application-input {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  resize: none;
+}
+
+.application-input:hover,
+.application-input:focus {
+  outline: none;
+  border-color: var(--color-green);
+}
+
+.application-input::placeholder {
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.application-textarea {
+  height: 94px;
+}
+
+.application-radio-group {
+  width: 100%;
+  margin: 0 0 40px;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.application-radio-title {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.application-radio {
+  position: relative;
+}
+
+.application-radio-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.application-radio-label {
+  position: relative;
+  padding-left: 28px;
+  font-size: 14px;
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.application-radio-label::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  border-radius: 50%;
+  background-color: var(--color-white);
+  transition: border-color 200ms ease-in-out;
+}
+
+.application-radio-label::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.application-radio-input:checked + .application-radio-label::before {
+  border-color: var(--color-green);
+}
+
+.application-radio-input:checked + .application-radio-label::after {
+  opacity: 1;
+}
+
+.application-submit {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 16px;
+}
+
+.application-policy {
+  max-width: 335px;
+  font-size: 12px;
+  line-height: 1.33;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.application-policy-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .application-form {
+    align-items: flex-start;
+    max-width: none;
+  }
+
+  .application-input {
+    min-width: 500px;
+    height: 56px;
+  }
+
+  .application-input::placeholder {
+    font-size: 16px;
+  }
+
+  .application-textarea {
+    height: 104px;
+  }
+
+  .application-radio-group {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .application-radio-title {
+    font-size: 20px;
+  }
+
+  .application-radio-label {
+    font-size: 18px;
+  }
+
+  .application-radio-label::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .application-radio-label::after {
+    width: 12px;
+    height: 12px;
+  }
+
+  .application-policy {
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .application-content {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 96px;
+  }
+
+  .application-form {
+    flex: 1;
+  }
+
+  .application-stat {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    width: 492px;
+    height: 578px;
+    padding: 0 20px 40px;
+    border-radius: 30px;
+    background-color: var(--color-green);
+    background-image: url('../img/application/1x.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 492px auto;
+  }
+
+  .application-submit {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 16px;
+  }
+
+  .application-stat-number {
+    margin-bottom: 8px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  .application-stat-text {
+    max-width: 380px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 144dpi),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .application-stat {
+    background-image: url('../img/application/2x.png');
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 240dpi),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2.5) {
+  .application-stat {
+    background-image: url('../img/application/3x.png');
+  }
+}
