@@ -1,0 +1,217 @@
+.proposal > .container {
+  position: relative;
+  overflow: hidden;
+  width: 335px;
+  padding: 40px 20px 64px;
+  border-radius: 16px;
+  background: linear-gradient(85deg, var(--color-green) 2.25%, var(--color-lightestgreen) 131.25%);
+}
+
+.proposal-title {
+  margin-bottom: 65px;
+  color: var(--color-white);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.proposal-cards {
+  position: relative;
+  width: 295px;
+  height: 408px;
+  margin: 0 auto;
+}
+
+.proposal-card {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+}
+
+.proposal-card-first {
+  z-index: 1;
+  transform: rotate(-9deg);
+  background-color: var(--color-lightgreen);
+}
+
+.proposal-card-second {
+  z-index: 2;
+  transform: rotate(11deg);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.proposal-card-main {
+  z-index: 3;
+  padding: 40px 19px;
+  background-color: var(--color-white);
+}
+
+.proposal-card-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+}
+
+.proposal-list {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  margin: 0 0 20px;
+  padding: 0;
+  gap: 16px;
+  list-style: none;
+}
+
+.proposal-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.42857;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+}
+
+.proposal-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: var(--color-green);
+}
+
+.proposal-photo {
+  display: none;
+}
+
+.proposal-card-main .btn {
+  width: 255px;
+}
+
+@media screen and (min-width: 768px) {
+  .proposal > .container {
+    width: 704px;
+    padding: 64px 18px 93px;
+  }
+
+  .proposal-title {
+    margin-bottom: 83px;
+    padding: 0 14px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .proposal-cards {
+    width: 668px;
+    height: 500px;
+  }
+
+  .proposal-card-first,
+  .proposal-card-second {
+    border-radius: 30px;
+  }
+
+  .proposal-card-main {
+    border-radius: 30px;
+    padding: 65px 32px 63px;
+  }
+
+  .proposal-card-title {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+  .proposal-list {
+    width: 451px;
+    margin-bottom: 32px;
+  }
+
+  .proposal-item {
+    gap: 16px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .proposal-item-text {
+    width: 405px;
+  }
+
+  .proposal-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .proposal-photo {
+    position: absolute;
+    top: 174px;
+    left: 503px;
+    display: block;
+    width: 214px;
+    height: 263px;
+  }
+
+  .proposal-card-main .btn {
+    width: 306px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .proposal > .container {
+    width: 1152px;
+    padding: 64px 64px 142px;
+  }
+
+  .proposal-title {
+    width: 776px;
+    margin-bottom: 133px;
+    padding: 0;
+  }
+
+  .proposal-cards {
+    width: 1024px;
+    height: 471px;
+  }
+
+  .proposal-card-first {
+    top: calc(50% - 231.5px);
+    left: calc(50% - 536px);
+    width: 1050px;
+    height: 463px;
+    transform: rotate(-8deg);
+  }
+
+  .proposal-card-second {
+    top: calc(50% - 201px);
+    left: calc(50% - 510px);
+    width: 1011px;
+    height: 402px;
+    transform: rotate(11deg);
+  }
+
+  .proposal-card-main {
+    padding: 65px 64px 63px;
+  }
+
+  .proposal-card-title {
+    margin-bottom: 40px;
+  }
+
+  .proposal-list {
+    width: 654px;
+    margin-bottom: 39px;
+  }
+
+  .proposal-item-text {
+    width: 610px;
+  }
+
+  .proposal-photo {
+    top: 129px;
+    left: 810px;
+  }
+}
