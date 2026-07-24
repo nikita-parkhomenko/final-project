@@ -1,0 +1,82 @@
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.reviews-card {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 40px;
+  border-radius: 16px;
+  background-color: var(--color-gray);
+}
+
+.reviews-card:first-child {
+  display: flex;
+}
+
+.reviews-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 78px;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: var(--color-green);
+}
+
+.reviews-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews-student {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--color-white);
+}
+
+.reviews-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.reviews-role {
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.5;
+}
+
+.reviews-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-card:nth-child(-n + 2) {
+    display: flex;
+    flex: 1 1 calc(50% - 16px);
+    max-width: 336px;
+    padding: 32px 16px 40px;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews-card:nth-child(-n + 3) {
+    display: flex;
+    flex: 1 1 calc(33.333% - 22px);
+    max-width: 320px;
+    padding: 32px 16px 40px;
+    border-radius: 30px;
+  }
+}
