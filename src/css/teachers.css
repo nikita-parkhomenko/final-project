@@ -1,0 +1,59 @@
+.teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.teachers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.teachers-photo {
+  margin-bottom: 16px;
+  border-radius: 50%;
+}
+
+.teachers-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.teachers-bio {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .teachers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .teachers-item {
+    flex: 1 1 calc(50% - 16px);
+  }
+
+  .teachers-bio {
+    max-width: 272px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teachers-item {
+    flex: 1 1 calc(25% - 24px);
+  }
+
+  .teachers-bio {
+    max-width: 232px;
+  }
+}
