@@ -59,7 +59,9 @@ h2 {
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
-  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    color 200ms ease-in-out;
 }
 
 .btn-primary {
@@ -104,7 +106,7 @@ h2 {
 
   .btn {
     max-width: 306px;
-    padding: 16px 64px;
+    padding: 16px 32px;
     font-size: 18px;
     line-height: 28px;
   }
