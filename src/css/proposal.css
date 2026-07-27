@@ -1,7 +1,7 @@
 .proposal > .container {
   position: relative;
   overflow: hidden;
-  width: 335px;
+  max-width: 375px;
   padding: 40px 20px 64px;
   border-radius: 16px;
   background: linear-gradient(85deg, var(--color-green) 2.25%, var(--color-lightestgreen) 131.25%);
@@ -95,7 +95,7 @@
 
 @media screen and (min-width: 768px) {
   .proposal > .container {
-    width: 704px;
+    max-width: 704px;
     padding: 64px 18px 93px;
   }
 
@@ -162,7 +162,7 @@
 
 @media screen and (min-width: 1280px) {
   .proposal > .container {
-    width: 1152px;
+    max-width: 1152px;
     padding: 64px 64px 142px;
   }
 
